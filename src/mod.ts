@@ -1,5 +1,5 @@
 export default {
-  async fetch(req: Request): Promise<Response> {
+  async fetch(req) {
     return new Response("Hello World");
   },
-};
+} satisfies ExportedHandler<Env>;

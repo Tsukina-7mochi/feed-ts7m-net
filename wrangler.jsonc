@@ -1,0 +1,9 @@
+{
+  "$schema": "https://www.unpkg.com/wrangler@4.38.0/config-schema.json",
+  "name": "feed-ts7m-net",
+  "main": "src/mod.ts",
+  "compatibility_date": "2025-09-20",
+  "observability": {
+    "enabled": true
+  }
+}
