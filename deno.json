@@ -12,12 +12,14 @@
     ]
   },
   "tasks": {
-    "dev": "deno serve --watch src/mod.ts",
+    "dev": "deno serve --allow-net --watch src/mod.ts",
     "dev-wg": "wrangler dev",
     "deploy": "wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "imports": {
+      "valibot": "jsr:@valibot/valibot@^1.1.0",
+      "fast-xml-parser": "npm:fast-xml-parser@^5.2.5",
       "wrangler": "npm:wrangler@^4.38.0"
    }
 }

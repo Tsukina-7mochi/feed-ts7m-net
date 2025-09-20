@@ -1,8 +1,14 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:wrangler@4.38.0": "4.38.0_unenv@2.0.0-rc.21_workerd@1.20250917.0",
+    "jsr:@valibot/valibot@^1.1.0": "1.1.0",
+    "npm:fast-xml-parser@^5.2.5": "5.2.5",
     "npm:wrangler@^4.38.0": "4.38.0_unenv@2.0.0-rc.21_workerd@1.20250917.0"
+  },
+  "jsr": {
+    "@valibot/valibot@1.1.0": {
+      "integrity": "2617f02b532011b8140926899d420a3e1bbb0fcb7cdf8e7b669df89e7edd7f5f"
+    }
   },
   "npm": {
     "@cloudflare/kv-asset-handler@0.4.0": {
@@ -423,6 +429,13 @@
     "exsolve@1.0.7": {
       "integrity": "sha512-VO5fQUzZtI6C+vx4w/4BWJpg3s/5l+6pRQEHzFRM8WFi4XffSP1Z+4qi7GbjWbvRQEbdIco5mIMq+zX4rPuLrw=="
     },
+    "fast-xml-parser@5.2.5": {
+      "integrity": "sha512-pfX9uG9Ki0yekDHx2SiuRIyFdyAr1kMIMitPvb0YBo8SUfKvia7w7FIyd/l6av85pFYRhZscS75MwMnbvY+hcQ==",
+      "dependencies": [
+        "strnum"
+      ],
+      "bin": true
+    },
     "fsevents@2.3.3": {
       "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
       "os": ["darwin"],
@@ -511,6 +524,9 @@
     "stoppable@1.1.0": {
       "integrity": "sha512-KXDYZ9dszj6bzvnEMRYvxgeTHU74QBFL54XKtP3nyMuJ81CFYtABZ3bAzL2EdFUaEwJOBOgENyFj3R7oTzDyyw=="
     },
+    "strnum@2.1.1": {
+      "integrity": "sha512-7ZvoFTiCnGxBtDqJ//Cu6fWtZtc7Y3x+QOirG15wztbdngGSkht27o2pyGWrVy0b4WAy3jbKmnoK6g5VlVNUUw=="
+    },
     "supports-color@10.2.2": {
       "integrity": "sha512-SS+jx45GF1QjgEXQx4NJZV9ImqmO2NPz5FNsIHrsDjh2YsHnawpan7SNQ1o8NuhrbHZy9AZhIoCUiCeaW/C80g=="
     },
@@ -588,6 +604,8 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@valibot/valibot@^1.1.0",
+      "npm:fast-xml-parser@^5.2.5",
       "npm:wrangler@^4.38.0"
     ]
   }
