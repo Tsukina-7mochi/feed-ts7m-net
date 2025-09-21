@@ -12,12 +12,15 @@
     ]
   },
   "tasks": {
+    "build": "deno run -RWE --allow-run build.ts",
     "dev": "deno serve --allow-net --watch src/mod.ts",
     "dev-wg": "wrangler dev",
     "deploy": "wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "imports": {
+      "@deno/esbuild-plugin": "jsr:@deno/esbuild-plugin@^1.2.0",
+      "esbuild": "npm:esbuild@^0.25.10",
       "valibot": "jsr:@valibot/valibot@^1.1.0",
       "fast-xml-parser": "npm:fast-xml-parser@^5.2.5",
       "wrangler": "npm:wrangler@^4.38.0"
